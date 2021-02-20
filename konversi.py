@@ -84,7 +84,7 @@ def tanya_input():
         bas_y = int(input("Basis tujuan (tuliskan dlm bntk angka) = "))
         konversi_sisa(desi,bas_y)
     elif mau == "kali":
-        basis_bil = int(input("Basis (tuliskan dlm bntk angka) = "))
+        basis_bil = int(input("Basis asal (tuliskan dlm bntk angka) = "))
         if basis_bil != 16:
             bil = int(input("Bilangan (tuliskan dlm bntk angka) = "))
             konversi_kali(bil,basis_bil)
