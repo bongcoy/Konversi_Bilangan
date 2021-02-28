@@ -81,7 +81,7 @@ def tanya_input():
     mau = input('Mau kali atau sisa ? \n\nkalo dari x ke desimal, maka ketik "kali"\nkalo dari desimal ke y, maka ketik "sisa"\n\nMaunya ')
     if mau == "sisa":
         desi = int(input("Desimal = "))
-        bas_y = int(input("Basis tujuan (tuliskan dlm bntk angka) = "))
+        bas_y = int(input("Basis tujuan (tuliskan dlm bntk angka, tanpa spasi) = "))
         konversi_sisa(desi,bas_y)
     elif mau == "kali":
         basis_bil = int(input("Basis asal (tuliskan dlm bntk angka) = "))
@@ -94,7 +94,7 @@ def tanya_input():
                 print('Ketik "selesai" apabila sudah tertulis semua\n')
                 konversi_kali(0,basis_bil)
             if ada_huruf == "ga":
-                bil = int(input("Bilangan (tuliskan dlm bntk angka) = "))
+                bil = int(input("Bilangan (tuliskan dlm bntk angka, tanpa spasi) = "))
                 konversi_kali(bil,basis_bil)          
 
 tanya_input()
